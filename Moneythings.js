@@ -1,11 +1,4 @@
-#/
-[rewrite_local]
-https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) url script-response-body https://raw.githubusercontent.com/Fdasa88888/Moneythings/main/Moneythings.js
-https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) url script-response-body https://raw.githubusercontent.com/Fdasa88888/Moneythings/main/Moneythings.js
 
-
-
-#/
 
 var body = JSON.parse(
   (typeof $response != "undefined" && $response.body) || null
@@ -55,3 +48,12 @@ if (
   }
 }
 $done(obj);
+#/
+[rewrite_local]
+https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) url script-response-body https://raw.githubusercontent.com/Fdasa88888/Moneythings/main/Moneythings.js
+https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) url script-response-body https://raw.githubusercontent.com/Fdasa88888/Moneythings/main/Moneythings.js
+[mitm]
+hostname = api.revenuecat.com
+
+
+#/
