@@ -1,6 +1,6 @@
 [rewrite_local]
-https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) url script-response-body apirevenuecat.js
-https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) url script-response-header apirevenuecat.js
+https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) url script-response-body https://raw.githubusercontent.com/Fdasa88888/Moneythings/main/Moneythings.js
+https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) url script-response-header https://raw.githubusercontent.com/Fdasa88888/Moneythings/main/Moneythings.js
 
 [mitm]
 hostname = api.revenuecat.com
