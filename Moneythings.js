@@ -1,3 +1,4 @@
+#/
 [rewrite_local]
 https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) url script-response-body https://raw.githubusercontent.com/Fdasa88888/Moneythings/main/Moneythings.js
 
@@ -5,7 +6,7 @@ https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) url script-response-b
 hostname = api.revenuecat.com
 
 
-
+#/
 
 var body = JSON.parse(
   (typeof $response != "undefined" && $response.body) || null
