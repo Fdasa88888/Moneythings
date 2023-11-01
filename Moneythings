@@ -1,3 +1,13 @@
+[rewrite_local]
+https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) url script-response-body apirevenuecat.js
+https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) url script-response-header apirevenuecat.js
+
+[mitm]
+hostname = api.revenuecat.com
+
+
+
+
 var body = JSON.parse(
   (typeof $response != "undefined" && $response.body) || null
 );
